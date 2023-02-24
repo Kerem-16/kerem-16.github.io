@@ -1,3 +1,22 @@
-#warning {
-    color: red;
+h1 {
+    text-align: center;
+}
+
+#welkom {
+    text-align: center;
+}
+
+div {
+    text-align: center; 
+}
+
+#main {
+    display: flex;
+    list-style-type: none;
+    margin: 20px;
+}
+
+li {
+    text-align: center;
+    margin-right: 10px;
 }
