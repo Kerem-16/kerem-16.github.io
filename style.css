@@ -1,22 +1,51 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-image: url(https://drscdn.500px.org/photo/192306115/m=2048/1b8bc8226bf55ad3782ec109f1802b52);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+
+}
+
+nav {
+    margin-left: 10px;
+
+}
+
+nav p {
+    display: inline-flex;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+
+nav p a {
+    font-size: 30px;
+    text-decoration-line: none;
+    color: rgb(141, 141, 141);
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 4px;
+    padding: 0px 3px;
+    transition: 0.4s;
+}
+
+nav p a:hover {
+    font-size: 30px;
+    text-decoration-line: none;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    border: 3px rgb(255, 255, 255) solid;
+    transition: 0.4s;
+}
+
+#first {
+    text-align: center;
+    font-size: 30px;
+}
+
 h1 {
-    text-align: center;
-}
-
-#welkom {
-    text-align: center;
-}
-
-div {
-    text-align: center; 
-}
-
-#main {
-    display: flex;
-    list-style-type: none;
-    margin: 20px;
-}
-
-li {
-    text-align: center;
-    margin-right: 10px;
+    text-transform: uppercase;
 }
