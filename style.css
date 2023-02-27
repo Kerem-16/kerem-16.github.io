@@ -35,7 +35,7 @@ nav p a {
 nav p a:hover {
     font-size: 30px;
     text-decoration-line: none;
-    background-color: aliceblue;
+    background-color: rgb(173, 217, 255);
     color: rgb(0, 0, 0);
     border: 3px rgb(255, 255, 255) solid;
     transition: 0.4s;
@@ -48,4 +48,34 @@ nav p a:hover {
 
 h1 {
     text-transform: uppercase;
+}
+
+main {
+    margin-top: 30%;
+}
+
+main p {
+    position: relative;
+    text-align: center;
+}
+
+main p a {
+    background-color: none;
+    font-size: 30px;
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+    border: 3px rgb(255, 255, 255) solid;
+    border-radius: 4px;
+    transition: 0.4s;
+    padding: 0px 3px;
+    display: inline-block;
+}
+
+main p a:hover {
+    font-size: 35px;
+    text-decoration-line: none;
+    background-color: rgb(0, 42, 79);
+    color: rgb(255, 255, 255);
+    border: 3px rgb(0, 42, 79) solid;
+    transition: 0.4s;
 }
