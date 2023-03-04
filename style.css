@@ -1,86 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Helvetica';
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
 
-}
 
-.header {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    border-bottom: 1px seashell solid;
-    width: 99%;
-    height: 69px;
-    align-items: center;
-    z-index: 3;
-    padding: 0 20px;
-    margin-bottom: 200px;
-}
-
-h1 {
-    font-family: 'Sacramento', cursive;
-    font-size: 40;
-}
-
-ul {
-    display: inline-flex;
-}
-
-ul li {
-    list-style: none;
-    padding: 0 20px;
-}
-
-ul li a {
-    color: seashell;
-}
-
-.topmain {
-    padding-top: 70px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 875px;
-}
-
-.title {
-    display: flex;
-    position: relative;
-    width: 100%;
-    margin: 400px 0px; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: center;
-    z-index: 2;
-    opacity: 0.6;
-    font-family: 'Lobster', cursive;
-}
-
-h2, h4 {
-    color: seashell;
-    text-align: center;
-}
-
-h4 {
-    line-height: 2;
-}
-
-.topmain img {
-    position: absolute;
-    width: 1300px;
-    height: auto;
-    z-index: 0;
-}
-
-.middlemain {
-    height: 1000px;
-}
-
-@media screen and (width=500px) {
     * {
         padding: 0;
         margin: 0;
@@ -88,27 +7,21 @@ h4 {
         font-size: 22px;
         color: seashell;
         background-color: black;
-    
+        /*border: 1px red solid;*/
     }
-    
+
     .header {
         display: flex;
         position: fixed;
         justify-content: space-between;
         border-bottom: 1px seashell solid;
-        width: 99%;
+        width: 100%;
         height: 69px;
         align-items: center;
         z-index: 3;
-        padding: 0 20px;
         margin-bottom: 200px;
     }
-    
-    h1 {
-        font-family: 'Sacramento', cursive;
-        font-size: 40;
-        color: red;
-    }
+
     
     ul {
         display: inline-flex;
@@ -121,7 +34,33 @@ h4 {
     
     ul li a {
         color: seashell;
+        text-decoration: none;
+        border: 1px seashell solid;
+        border-radius: 10px;
+        padding: 5px 10px;
+        transition: 0.5s;
     }
+    
+    ul li a:hover {
+        color: rgb(0, 0, 0);
+        background-color: seashell;
+        text-decoration: none;
+        border: 1px seashell solid;
+        border-radius: 10px;
+        padding: 5px 10px;
+        transition: 0.2s
+    }
+
+    .current a {
+        color: black;
+        background-color: seashell;
+        text-decoration: none;
+        border: 1px seashell solid;
+        border-radius: 10px;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+    
     
     .topmain {
         padding-top: 70px;
@@ -132,35 +71,166 @@ h4 {
     }
     
     .title {
-        display:inline-block;
+        display: inline-flex;
         position: relative;
-        width: 100%;
-        margin: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        margin: 4% auto auto 15%;
         z-index: 2;
-        justify-content: center;
-        opacity: 0.6;
+        opacity: 0.5;
         font-family: 'Lobster', cursive;
+        width: 35%;
     }
+
     
+    h1 {
+        font-family: 'Sacramento', cursive;
+        font-size: 40;
+        padding-left: 10px;
+        word-spacing: 10%;
+    }
+
     h2, h4 {
         color: seashell;
         text-align: center;
     }
     
+    h2 {
+        font-family: 'Lobster', cursive;
+        font-size: 40px;
+        width: 100%;
+    }
+    
     h4 {
         line-height: 2;
     }
-    
+
     .topmain img {
         position: absolute;
         width: 1300px;
         height: auto;
         z-index: 0;
     }
-    
+
     .middlemain {
         height: 1000px;
     }
+
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+    and (max-width: 580px) { 
+    
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Helvetica';
+            font-size: 12px;
+            color: seashell;
+            background-color: black;
+            /*border: 1px red solid;*/
+        }
+    
+        .header {
+            display: block;
+            position: fixed;
+            border-bottom: 1px seashell solid;
+            width: 100%;
+            height: 80px;
+            align-items: center;
+            z-index: 3;
+            margin-bottom: 200px;
+        }
+    
+        h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 30;
+            text-align: center;
+            margin: 3px 0;
+            word-spacing: 10px;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+    
+        ul li {
+            list-style: none;
+            padding: 0 10px;
+
+        }
+    
+        ul li a {
+            color: seashell;
+            text-decoration: none;
+            border: 1px seashell dashed;
+            border-radius: 10px;
+            padding: 5px 10px;
+            transition: 0.5s;
+        }
+    
+        ul li a:hover {
+            color: rgb(0, 0, 0);
+            background-color: seashell;
+            text-decoration: none;
+            border: 1px seashell solid;
+            border-radius: 10px;
+            padding: 5px 10px;
+            transition: 0.2s
+        }
+
+        .current a {
+            color: black;
+            background-color: seashell;
+            text-decoration: none;
+            border: 1px seashell solid;
+            border-radius: 10px;
+            padding: 5px 10px;
+            transition: 0.5s;
+        }
+    
+        .topmain {
+            padding-top: 80px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 875px;
+        }
+    
+        .title {
+            display: inline-flex;
+            position: relative;
+            z-index: 2;
+            opacity: 0.5;
+            font-family: 'Lobster', cursive;
+            width: 30%;
+            margin: 4% auto auto 5%;
+        }
+    
+        h2, h4 {
+            color: seashell;
+            text-align: center;
+        }
+
+        .title h2 {
+            font-size: 20px;
+        }
+    
+        h4 {
+            line-height: 2;
+        }
+    
+        .topmain img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 0;
+        }
+    
+        .middlemain {
+
+        }
 }
