@@ -408,6 +408,12 @@ and (max-width: 610px) {
             height: 875px;
         }
 
+        .topmain img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 0;
+        }
     }
 
 @media only screen 
