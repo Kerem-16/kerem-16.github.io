@@ -1,5 +1,4 @@
-
-    * {
+* {
         padding: 0;
         margin: 0;
         font-family: 'Helvetica';
@@ -9,19 +8,21 @@
         /*border: 1px red solid;*/
     }
 
+    body {
+        width: 100%;
+    }
+
     .header {
         display: flex;
         position: fixed;
         justify-content: space-between;
-        border-bottom: 1px seashell solid;
+        border-bottom: 1px rgb(255, 255, 255) solid;
         width: 100%;
-        height: 69px;
+        height: 75;
         align-items: center;
         z-index: 3;
-        margin-bottom: 200px;
     }
 
-    
     ul {
         display: inline-flex;
     }
@@ -34,7 +35,7 @@
     ul li a {
         color: seashell;
         text-decoration: none;
-        border: 1px seashell solid;
+        border: 3px seashell solid;
         border-radius: 10px;
         padding: 5px 10px;
         transition: 0.5s;
@@ -44,7 +45,7 @@
         color: rgb(0, 0, 0);
         background-color: seashell;
         text-decoration: none;
-        border: 1px seashell solid;
+        border: 3px rgb(255, 166, 103) solid;
         border-radius: 10px;
         padding: 5px 10px;
         transition: 0.2s
@@ -54,25 +55,28 @@
         color: black;
         background-color: seashell;
         text-decoration: none;
-        border: 1px seashell solid;
+        border: 3px seashell solid;
         border-radius: 10px;
         padding: 5px 10px;
         transition: 0.5s;
     }
     
-    
     .topmain {
         padding-top: 70px;
         position: relative;
-        display: flex;
+        display: block;
         justify-content: center;
-        height: 875px;
+        width: 100%;
+        height:100%;
+        border-bottom: 1px seashell solid;
+        background-image: url("https://images3.alphacoders.com/846/846324.jpg");
+        background-size: cover;
     }
     
     .title {
         display: inline-flex;
         position: relative;
-        margin: 4% auto auto 15%;
+        margin: 3%;
         z-index: 2;
         opacity: 0.5;
         font-family: 'Lobster', cursive;
@@ -82,7 +86,7 @@
     
     h1 {
         font-family: 'Sacramento', cursive;
-        font-size: 40;
+        font-size: 50;
         padding-left: 10px;
         word-spacing: 10%;
     }
@@ -102,20 +106,290 @@
         line-height: 2;
     }
 
-    .topmain img {
-        position: absolute;
-        width: 1300px;
+    .middlemain {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        background-color: white;
+        border-bottom: 1px white solid;
+        width: 100%;
         height: auto;
-        z-index: 0;
+}
+
+.container {
+    display: grid;
+    gap: 0px;
+    grid-template-rows: 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.child a {
+ display: flex;
+ z-index: 5;;
+ margin: auto;
+ border: 1px white solid;
+ width: 200px;
+ height: 200px;
+ text-transform: uppercase;
+ text-decoration: none;
+ justify-content: center;
+ align-items: center;
+font-size: 30px;
+color: rgb(255, 255, 255);
+-webkit-text-stroke: 2px black;
+font-weight: 700;
+}
+
+.breads{
+    background-image: url("https://www.wealthmanagement.com/sites/wealthmanagement.com/files/styles/article_featured_retina/public/bread-inflation.jpg?itok=wlfmE9eN");
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+}
+
+.cookies{
+    background-image: url("https://www.laurasbakery.nl/wp-content/uploads/2021/08/basisrecept-chocolate-chip-cookies-1a.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.pastries{
+    background-image: url("https://cdn.shopify.com/s/files/1/1981/3807/products/Box_12_pastries_71fbf7cf-6dd9-40c4-b48f-ba34d70adc5a_2048x.jpg?v=1600972788");
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.muffin{
+    background-image: url("https://blog.giallozafferano.it/primipiattiricette/wp-content/uploads/2020/08/unnamed-2.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.special {
+    background-image: url("https://images.deliveryhero.io/image/fd-th/LH/w5mg-hero.jpg");    
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.solden {
+    background-image: url("https://alpina-solden-hotel.ibooked.nl/data/Photos/OriginalPhoto/7376/737651/737651131/Hotel-Alpina-Solden-Adults-Only-Exterior.JPEG");    
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1300px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Helvetica';
+        font-size: 22px;
+        color: seashell;
+        background-color: black;
+        /*border: 1px red solid;*/
+    }
+
+    .header {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        border-bottom: 1px seashell solid;
+        width: 100%;
+        height: 69px;
+        align-items: center;
+        z-index: 3;
+        margin-bottom: 200px;
+    }
+
+    
+    ul {
+        display: inline-flex;
+    }
+    
+    ul li {
+        list-style: none;
+        padding: 0 20px;
+    }
+    
+    ul li a {
+        color: seashell;
+        text-decoration: none;
+        border: 1px seashell solid;
+        border-radius: 10px;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+    
+    ul li a:hover {
+        color: rgb(0, 0, 0);
+        background-color: seashell;
+        text-decoration: none;
+        border: 1px seashell solid;
+        border-radius: 10px;
+        padding: 5px 10px;
+        transition: 0.2s
+    }
+
+    .current a {
+        color: black;
+        background-color: seashell;
+        text-decoration: none;
+        border: 1px seashell solid;
+        border-radius: 10px;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+    
+    .topmain {
+        padding-top: 70px;
+        position: relative;
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height:100%;
+        border-bottom: 1px seashell solid;
+        background-image: url("https://images3.alphacoders.com/846/846324.jpg");
+        background-size: cover;
+    }
+    
+    .title {
+        display: inline-flex;
+        position: relative;
+        margin: 2%;
+        z-index: 2;
+        opacity: 0.5;
+        font-family: 'Lobster', cursive;
+        width: 35%;
+    }
+
+    
+    h1 {
+        font-family: 'Sacramento', cursive;
+        font-size: 35;
+        padding-left: 10px;
+        word-spacing: 10%;
+    }
+
+    h2, h4 {
+        color: seashell;
+        text-align: center;
+    }
+    
+    h2 {
+        font-family: 'Lobster', cursive;
+        font-size: 40px;
+        width: 100%;
+    }
+    
+    h4 {
+        line-height: 2;
     }
 
     .middlemain {
-        height: 1000px;
+        display: inline-flex;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(3, 200px);
+    justify-content: space-around;
+    width: 100%;
+}
+
+    .child a {
+        display: block;
+        z-index: 5;;
+        margin: auto;
+        border: 1px white solid;
+        width: 200px;
+        height: 200px;
     }
 
+}
+
+@media only screen 
+and (max-width: 920px) {
+    h1 {
+        font-family: 'Sacramento', cursive;
+        font-size: 25;
+        padding-left: 10px;
+        word-spacing: 10%;
+    }
+
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    border-bottom: 1px seashell solid;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    z-index: 3;
+    margin-bottom: 200px;
+}
+
+ul {
+    display: inline-flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+ul li a {
+    color: seashell;
+    text-decoration: none;
+    border: 1px seashell solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: seashell;
+    text-decoration: none;
+    border: 1px seashell solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: 0.2s
+}
+
+.current a {
+    color: black;
+    background-color: seashell;
+    text-decoration: none;
+    border: 1px seashell solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 35;
+    padding-left: 10px;
+    word-spacing: 10%;
+}
+
+}
 /*Media width = 610px*/
 @media only screen 
-and (max-width: 610px) {
+and (max-width: 660px) {
 
     * {
         padding: 0;
@@ -184,7 +458,8 @@ and (max-width: 610px) {
         position: relative;
         display: flex;
         justify-content: center;
-        height: 875px;
+        height: 440px;
+        width: 100%;
     }
     
     .title {
@@ -222,13 +497,35 @@ and (max-width: 610px) {
 
     .topmain img {
         position: absolute;
-        width: 1300px;
+        width: 100%;
         height: auto;
         z-index: 0;
     }
 
     .middlemain {
-        height: 1000px;
+        display: inline-flex;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(3, 200px);
+    justify-content: space-around;
+    width: 100%;
+}
+
+    .child a {
+        display: block;
+        z-index: 5;;
+        margin: auto;
+        border: 1px white solid;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -285,7 +582,7 @@ and (max-width: 610px) {
         ul li a {
             color: seashell;
             text-decoration: none;
-            border: 1px seashell dashed;
+            border: 1px seashell solid;
             border-radius: 10px;
             padding: 5px 10px;
             transition: 0.5s;
@@ -316,7 +613,8 @@ and (max-width: 610px) {
             position: relative;
             display: flex;
             justify-content: center;
-            height: 875px;
+            height: 260px;
+            width: 100%;
         }
     
         .title {
@@ -347,74 +645,36 @@ and (max-width: 610px) {
             width: 100%;
             height: auto;
             z-index: 0;
+            padding: 0 auto;
         }
     
         .middlemain {
-
-        }
-}
-
-@media only screen 
-    and (max-width: 375px) {
-
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: 'Helvetica';
-            font-size: 12px;
-            color: seashell;
-            background-color: black;
-            /*border: 1px red solid;*/
-        }
-
-        .header {
             display: block;
-            position: fixed;
-            border-bottom: 1px seashell solid;
+            background-color: white;
             width: 100%;
-            height: 60px;
-            align-items: center;
-            z-index: 3;
-            margin-bottom: 0px;
-        }
-
-        h1 {
-            font-size: 20px;
-        }
-        ul li a {
-            color: seashell;
-            text-decoration: none;
-            border: 1px seashell dashed;
-            border-radius: 10px;
-            padding: 2px 5px;
-            transition: 0.5s;
-        }
-        
-        .current a {
-            color: black;
-            background-color: seashell;
-            text-decoration: none;
-            border: 1px seashell solid;
-            border-radius: 10px;
-            padding: 2px 5px;
-            transition: 0.5s;
-        }
-
-        .topmain {
-            padding-top: 50px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            height: 875px;
-        }
-
-        .topmain img {
-            position: absolute;
-            width: 100%;
-            height: auto;
-            z-index: 0;
-        }
     }
+    .container {
+        display: grid;
+        gap: 20px;
+        grid-template-rows: repeat(3, 150px);
+        grid-template-columns: repeat(2,150px);
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .child a {
+     display: flex;
+     z-index: 5;;
+     margin: auto;
+     border: 1px white solid;
+     width: 150px;
+     height: 150px;
+     text-transform: uppercase;
+     text-decoration: none;
+     justify-content: center;
+     align-items: center;
+    }
+}
 
 @media only screen 
     and (max-width: 320px) { 
@@ -467,7 +727,7 @@ and (max-width: 610px) {
         ul li a {
             color: seashell;
             text-decoration: none;
-            border: 1px seashell dashed;
+            border: 1px seashell solid;
             border-radius: 10px;
             padding: 2px 5px;
             transition: 0.5s;
